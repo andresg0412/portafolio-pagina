@@ -1,0 +1,33 @@
+.screen {
+    background-color: #14172c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+@media screen and (max-width: 400px) {
+    .screen {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+}
+
+
+/*ANIMACIONES*/
+
+.slide-appear {
+    transform: translateY(100px);
+    /* Inicia 100px abajo */
+    opacity: 0;
+}
+
+.slide-appear-active {
+    transform: translateY(0);
+    /* Se desliza hacia su posición original */
+    opacity: 1;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+    /* Ajusta la duración y el tipo de transición */
+}
