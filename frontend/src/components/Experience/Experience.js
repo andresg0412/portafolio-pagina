@@ -8,8 +8,18 @@ const Experience = () => {
     return (
         <>
             <div className="containExperience">
-                <h1><span style={{ marginRight: "6px" }}><MdOutlineWorkOutline size={28} /></span>Experiencia Laboral</h1>
+                <h1><span style={{ marginRight: "6px", color: "#facc15" }}><MdOutlineWorkOutline size={28} /></span>Experiencia Laboral</h1>
                 <div className="experiencesList">
+                    <ExperienceItem
+                        title="Desarrollador Full Stack - Freelance"
+                        company="Proyecto - Smart House"
+                        date="2024"
+                        description="
+                            Creación de aplicativo para gestión interna de la empresa, desarrollado con React, Material UI en el frontend, y en el backend Nodejs, Nest, base de datos PostgreSQL
+                            Diseño y desarrollo de APIs RESTful. Despliegue de aplicación con Docker, AWS (Lightsail), Git.
+
+                        "
+                    />
                     <ExperienceItem
                         title="Ingeniero Programador de Aplicaciones"
                         company="DiX - Emtelco"

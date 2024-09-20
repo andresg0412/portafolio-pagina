@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./HomePage.css";
-
+import Skills from "../../components/Skills/Skills";
 import Header from "../../components/Header/Header";
 import Profile from "../../components/Profile/Profile";
 import Experience from "../../components/Experience/Experience";
@@ -43,6 +43,9 @@ const HomePage = () => {
                         </div>
 
                     </CSSTransition>
+                </section>
+                <section id="skills">
+                    <Skills />
                 </section>
                 <section id="experience">
                     <Experience />

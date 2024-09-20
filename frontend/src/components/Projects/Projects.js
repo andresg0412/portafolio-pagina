@@ -10,7 +10,7 @@ const Projects = () => {
     return (
         <>
             <div className="containProjects">
-                <h1><span style={{ marginRight: "6px" }}><IoIosApps size={28} /></span>Proyectos</h1>
+                <h1><span style={{ marginRight: "6px", color: "#facc15" }}><IoIosApps size={28} /></span>Proyectos</h1>
                 <div className="projectsList">
                     <Projectitem
                         title="Portal de Empleo"

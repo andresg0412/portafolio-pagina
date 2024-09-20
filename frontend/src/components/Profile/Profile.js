@@ -1,6 +1,8 @@
 import React from "react";
 import ButtonComponent from "../Common/button/ButtonComponent";
+import ButtonDownload from "../Common/button/ButtonDownload";
 import fotoperfilweb from "../../assets/img/fotoperfilweb.png";
+import cvpdf from "../../assets/img/Hv-German-Andres-Gamboa-dev.pdf";
 import "./Profile.css";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -49,6 +51,13 @@ const Profile = () => {
                         rel="noreferrer"
                         className="btn btn-primary"
                         type="button"
+                        icon={<FaLinkedin size={15} />}
+                    />
+                    <ButtonDownload 
+                        title="Descargar CV"
+                        url={cvpdf}
+                        download="Hv-German-Andres-Gamboa-dev.pdf"
+                        className="btn btn-primary"
                         icon={<FaLinkedin size={15} />}
                     />
                 </div>
