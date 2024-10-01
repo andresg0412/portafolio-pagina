@@ -10,6 +10,8 @@ services:
     container_name: portafolio
     networks:
       - web-network
+    environment:
+      - VIRTUAL_HOST=dev-andresg.space
 
 networks:
   web-network:
