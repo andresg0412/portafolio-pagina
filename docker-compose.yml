@@ -7,18 +7,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    container_name: portafolio
     networks:
-      - network-portfolio
-
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "8080:80"
-    volumes:
-      - ./frontend/build:/usr/share/nginx/html
-    networks:
-      - network-portfolio
+      - web-network
 
 networks:
-  network-portfolio:
-    driver: bridge
+  web-network:
+    external: true
